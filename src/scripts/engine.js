@@ -187,6 +187,11 @@ function init() {
 
     drawCards(5, state.playerSides.player1);
     drawCards(5, state.playerSides.computer);
+
+    const bgm = document.getElementById("bgm");
+    bgm.play();
+    bgm.volume = 0.2;
+
 }
 
 document.addEventListener("DOMContentLoaded", init);
